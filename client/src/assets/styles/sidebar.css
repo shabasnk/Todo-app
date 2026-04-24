@@ -1,0 +1,31 @@
+#sidebar {
+    width:16%;
+    background-color: #4C6551;
+    height: 650px;
+}
+#sidebar-top {
+    padding-left: 15px;
+    padding-top: 15px;
+    
+}
+#sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 50px;
+    padding-right: 40px;;
+    justify-content: space-between 30px;
+    
+}
+#sidebar-bottom {
+    background-color: red;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+#sicebar-bottom button {
+    background-color:blue;
+}
