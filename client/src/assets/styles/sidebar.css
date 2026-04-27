@@ -1,6 +1,10 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
 #sidebar {
     width:16%;
-    background-color: #4C6551;
+    background-color: #2E3433;
     height: 650px;
 }
 #sidebar-top {
@@ -16,16 +20,22 @@
     margin-top: 50px;
     padding-right: 40px;;
     justify-content: space-between 30px;
+    row-gap: 25px;
     
 }
 #sidebar-bottom {
-    background-color: red;
-    height: 300px;
+    background-color: #2E3433;
+    height: 317px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 70px;
 }
-#sicebar-bottom button {
-    background-color:blue;
+#sidebar-bottom button {
+    background-color:#ADCFB1;
+    margin-top: auto;
+    padding: 13px;
+    width: 170px;
+    border-radius: 30px;
+
 }
