@@ -25,7 +25,7 @@ const Sidebar = () => {
             </div>
 
             <div id="sidebar-bottom" >
-                <button> {<FaPlus />} New Task</button>
+                <button style={{marginBottom:'20px'}}> {<FaPlus />} New Task</button>
 
             </div>
 

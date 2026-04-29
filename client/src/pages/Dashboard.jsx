@@ -1,51 +1,247 @@
-import "../assets/styles/dashboard.css"
-import UserProfile from "../assets/User profile.png"
-const Dashboard = () => {
-    return (
-        <>
-        <div  >
-            <div id="second-container" style={{backgroundColor:'#0B0F0E'}} >
-                <div id="image-container" >
-                    <img src={UserProfile} alt="User Profile" />
-                    <div>
-                        <h1 style={{color:'#ADCFB1', paddingLeft:'20px'}} >Julianne Doe</h1>
-                        <p style={{color:'#A4ADAA', paddingTop:'-30px'}} >julianne.doe@mindfulcanvas.com</p>
-                    </div>
+import React from "react";
+import "../assets/styles/dashboard.css";
+import { FaRegCircle } from "react-icons/fa";
+import { FaCircleCheck } from "react-icons/fa6";
 
+
+function Dashboard() {
+  return (
+    <div>
+      <div id="main-container">
+        <div id="first-section">
+          <h1 style={{ color: "#ADCFB1", marginBottom: "5px" }}>
+            The Mindful Canvas
+          </h1>
+          <p style={{ color: "#A4ADAA", margin: "0" }}>
+            Stay present. One task at a time.
+          </p>
+        </div>
+
+        <div id="second-section">
+          <p
+            style={{
+              color: "#414A47",
+              paddingTop: "30px",
+              paddingLeft: "30px",
+              width: "500px",
+            }}
+          >
+            What do you need to do?
+          </p>
+          <button id="secondSection-button">+ Add Task</button>
+        </div>
+
+        <div id="third-section">
+          <div
+            style={{
+              borderRadius: "20px",
+              width: "250px",
+              padding: "10px",
+              display: "flex",
+              gap: "10px",
+              backgroundColor: "#0F1413",
+            }}
+          >
+            <button
+              style={{
+                borderRadius: "20px",
+                width: "60px",
+                height: "30px",
+                color: "#A4ADAA",
+                backgroundColor: "#0F1413",
+              }}
+            >
+              All
+            </button>
+            <button
+              style={{
+                borderRadius: "20px",
+                width: "60px",
+                height: "30px",
+                color: "#A4ADAA",
+                backgroundColor: "#0F1413",
+              }}
+            >
+              active
+            </button>
+            <button
+              style={{
+                borderRadius: "20px",
+                width: "70px",
+                height: "30px",
+                color: "#A4ADAA",
+                backgroundColor: "#0F1413",
+              }}
+            >
+              completed
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="fourth-section"
+          style={{ display: "flex", flexDirection: "column", gap: "20px" }}
+        >
+          <div style={{ display: "flex" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "80px",
+              }}
+            >
+              {
+                <div style={{ paddingLeft: "30px", paddingBottom: "8px" }}>
+                  {" "}
+                  {<FaRegCircle size={30} color="#ADCFB1" />}
                 </div>
-
-                <div id="sectionTwo" >
-                    <div id="first-card" >
-                        < p style={{margin:'0',color:'#A4ADAA'}} >FOCUS SCORE</p>
-                        <div id="fristCard-section" >
-                        <h1 style={{margin:'15px', marginRight:'6px',marginLeft:'0px', color:'#ADCFB1' }} >42</h1>
-                        <p style={{paddingTop:'29px',margin:'0', color:'#A4ADAA' }} >Tasks Completed</p>
-                        </div>
-    
-                    </div>
-
-                    <div id="second-card" >
-                        <p style={{color:'#294730', margin:'12px', marginLeft:'0'}} >ACTIVE STREAK</p>
-                        <div id="secondCard-section" >
-                            <h1 style={{margin:'0'}} >12</h1>
-                            <p style={{color:'#294730', paddingTop:'15px', margin:'0'}} >Days in Focus</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="sectionThree" >
-                    <div><p style={{color:'#A4ADAA'}} >PREFERENCES</p></div>
-                    <div></div>
-
-                </div>
-
+              }
             </div>
-            
+            <div
+              style={{
+                width: "300px",
+                height: "100px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                paddingLeft: "10px",
+                gap: "5px",
+              }}
+            >
+              <h2 style={{ color: "#DEE7E4", width: "600px" }}>
+                Review project proposal
+              </h2>
+              <p style={{ color: "#A4ADAA", width: "600px" }}>
+                Go through the Q4 budget requirements and align with the design
+                team.
+              </p>
+            </div>
+          </div>
+
+          {/*dllkdslkdsdslds*/}
+          <div style={{ display: "flex" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "80px",
+              }}
+            >
+              {
+                <div style={{ paddingLeft: "30px", paddingBottom: "8px" }}>
+                  {" "}
+                  {<FaRegCircle size={30} color="#ADCFB1" />}
+                </div>
+              }
+            </div>
+            <div
+              style={{
+                width: "300px",
+                height: "100px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                paddingLeft: "10px",
+                gap: "5px",
+              }}
+            >
+              <h2 style={{ color: "#DEE7E4", width: "600px" }}>
+                Review project proposal
+              </h2>
+              <p style={{ color: "#A4ADAA", width: "600px" }}>
+                Go through the Q4 budget requirements and align with the design
+                team.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="fifth-section">
+          <div style={{ display: "flex" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "80px",
+              }}
+            >
+              {
+                <div style={{ paddingLeft: "30px", paddingBottom: "8px" }}>
+                  {" "}
+                  {<FaCircleCheck  size={30} color="#ADCFB1" backgroundColor="#FFFFFF" />}
+                </div>
+              }
+            </div>
+            <div
+              style={{
+                width: "300px",
+                height: "100px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                paddingLeft: "10px",
+                gap: "5px",
+              }}
+            >
+              <h2 style={{ color: "#DEE7E4", width: "600px" }}>
+                Morning meditation
+              </h2>
+              <p style={{ color: "#A4ADAA", width: "600px" }}>
+                Completed at 8:00 AM
+              </p>
+            </div>
+          </div>
+          {/*dllkdslkdsdslds*/}
+
+          <div style={{ display: "flex" }}>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "80px",
+              }}
+            >
+              {
+                <div style={{ paddingLeft: "30px", paddingBottom: "8px" }}>
+                  {" "}
+                  {<FaCircleCheck  size={30} color="#ADCFB1" backgroundColor="#FFFFFF" />}
+                </div>
+              }
+            </div>
+            <div
+              style={{
+                width: "300px",
+                height: "100px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                paddingLeft: "10px",
+                gap: "5px",
+              }}
+            >
+              <h2 style={{ color: "#DEE7E4", width: "600px" }}>
+                Update component library
+              </h2>
+              <p style={{ color: "#A4ADAA", width: "600px" }}>
+                Completed yesterday
+              </p>
+            </div>
+          </div>
+
 
         </div>
-        </>
-    )
+      </div>
+    </div>
+  );
 }
+
 export default Dashboard;

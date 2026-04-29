@@ -4,7 +4,12 @@ const Navbar = () => {
     return(
         <>
         <div id="navbar" >    
-            content
+            <div id='first-section' >
+                <p>Task</p>
+                <p>Focus Timer</p>
+                <p>Settings</p>
+            </div>
+            <div></div>
 
         </div>
         </>

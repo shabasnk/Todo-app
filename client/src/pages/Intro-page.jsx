@@ -4,7 +4,7 @@ const IntroPage = () => {
 
     return(
         <>
-        <div>
+        <div style={{backgroundColor:'#red'}} >
             <header id="header" ></header>
 
               <div id="image-container" >
@@ -14,8 +14,13 @@ const IntroPage = () => {
                 </div>
 
                 <div id="text-container" >
-                    <h1>FocusList</h1>
-                    <p>Stay focused. Get things done</p>
+                    <h1 style={{color:'#DEE7E4'}} >FocusList</h1>
+                    <p style={{color:'#A4ADAA'}} >Stay focused. Get things done</p>
+                </div>
+
+                <div id="last-section" >
+                    <button id="lastSection-button" >Get Started</button>
+                    <a href="" style={{color:'#DEE7E4'}} >Login</a>
                 </div>
 
         </div>

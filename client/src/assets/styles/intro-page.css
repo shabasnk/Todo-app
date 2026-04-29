@@ -4,7 +4,7 @@ body {
 #header {
     background-color: #0B0F0E;
     width: 100%;
-    height: 88px;
+    height: 60px;
 }
 #image-container {
     width: 100%;
@@ -31,9 +31,27 @@ body {
     background-color: #000000;
 }
 #text-container {
-    display: column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
-
+}
+#last-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    
+}
+#lastSection-button {
+    height: 50px;
+    width: 150px;
+    background-color: #3B5941;
+    border-radius: 30px;
 }
