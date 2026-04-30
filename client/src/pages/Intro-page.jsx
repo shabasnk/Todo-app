@@ -4,7 +4,7 @@ const IntroPage = () => {
 
     return(
         <>
-        <div style={{backgroundColor:'#red'}} >
+        <div style={{height:'720px'}} >
             <header id="header" ></header>
 
               <div id="image-container" >

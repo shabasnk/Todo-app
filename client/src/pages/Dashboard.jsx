@@ -8,7 +8,8 @@ import { FaCheckDouble } from "react-icons/fa6";
 
 function Dashboard() {
   return (
-    <div>
+    
+    <div style={{backgroundColor:'#0F1413'}} >
       <div id="main-container">
         <div id="first-section">
           <h1 style={{ color: "#ADCFB1", marginBottom: "5px" }}>

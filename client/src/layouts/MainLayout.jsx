@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import IntroPage from '../pages/Intro-page'
 import { Outlet } from 'react-router-dom'
 
+
 function MainLayout() {
   return (
     <>

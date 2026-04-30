@@ -1,12 +1,15 @@
 #main-container {
     width: 60%;
-    height: 1200px;
-    background-color:0F1413;
+    height: 1100px;
+    /* background-color:0F1413; */
+    background-color: #0F1413;
+
     margin-left: 180px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-top: 50px;
 }
 #first-section {
     display: flex;
