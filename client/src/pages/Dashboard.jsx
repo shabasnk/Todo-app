@@ -2,6 +2,8 @@ import React from "react";
 import "../assets/styles/dashboard.css";
 import { FaRegCircle } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
+import { FaCheckDouble } from "react-icons/fa6";
+
 
 
 function Dashboard() {
@@ -160,7 +162,50 @@ function Dashboard() {
           </div>
         </div>
 
+
+      {/* Fifth section */}
         <div id="fifth-section">
+
+          <div style={{ display: "flex" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "80px",
+              }}
+            >
+              {
+                <div style={{ paddingLeft: "30px", paddingBottom: "8px" }}>
+                  {" "}
+                  {<FaCheckDouble   size={30} color="#414A47" backgroundColor="#FFFFFF" />}
+                </div>
+              }
+            </div>
+            <div
+              style={{
+                width: "300px",
+                height: "100px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                paddingLeft: "10px",
+                gap: "5px",
+              }}
+            >
+              {/* <h2 style={{ color: "#DEE7E4", width: "600px" }}>
+                Morning meditation
+              </h2> */}
+              <p style={{ color: "#414A47", width: "600px" }}>
+              RECENTLY COMPLETED
+              </p>
+            </div>
+          </div>
+
+
+
+
           <div style={{ display: "flex" }}>
             <div
               style={{
